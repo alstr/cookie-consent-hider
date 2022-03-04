@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        select {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <label>Mode
+            <select id="mode" name="mode">
+                <option value="automatic">Automatic</option>
+                <option value="manual">Manual</option>
+            </select>
+        </label>
+        <p>
+            <small>
+                Automatic: extension will run on page load.<br>
+                Manual: extension will only run when the icon is pressed.
+            </small>
+        </p>
+        <button type="submit">Save</button>
+    </form>
+
+    <script src="options.js"></script>
+
+</body>
+
+</html>

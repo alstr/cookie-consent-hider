@@ -1,0 +1,56 @@
+{
+    "description": "Hides fixed-position cookie consent dialogues, banners, etc.",
+    "manifest_version": 2,
+    "name": "Cookie Consent Hider",
+    "version": "1.0",
+    "homepage_url": "https://github.com/alstr/cookie-consent-hider",
+
+    "page_action": {
+        "default_icon": "icons/icon.svg",
+        "default_title": "Cookie Consent Hider",
+        "browser_style": true
+    },
+
+    "sidebar_action": {
+        "default_title": "Cookie Consent Hider",
+        "default_panel": "sidebar.html",
+        "open_at_install": false
+    },
+
+    "commands": {
+        "_execute_sidebar_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+X"
+            }
+        }
+    },
+
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "storage"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content_script.js"],
+            "run_at": "document_start"
+        }
+    ],
+
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "cch@mnydigital.com"
+        }
+    }
+}
