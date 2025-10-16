@@ -1,10 +1,10 @@
 # Cookie Consent Hider
 
-**This add-on hides fixed-position cookie consent dialogues, banners, etc.**
+**This add-on hides fixed-position cookie consent dialogs, banners, etc.**
 
 ## What it does
 
-When activated, Cookie Consent Hider searches the page DOM for any elements relating to fixed-position cookie consent dialogues, and adds CSS styling to hide them.
+When activated, Cookie Consent Hider searches the page DOM for any elements relating to fixed-position cookie consent dialogs, and adds CSS styling to hide them.
 
 No cookies are accepted or rejected by the extension; it simply hides UI elements, so the user can browse the page without having to set any preferences.
 
